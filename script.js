@@ -22,8 +22,8 @@ function getMovieData(movieName) {
             console.log(data);
             const cardMovie = document.getElementById('cardMovie');
             if (data.Response == 'False') {
-                console.log('movie not found')
-                cardMovie.innerHTML = ``
+                cardMovie.innerHTML = `<p>Movie not found!</p>`;
+                movieDetails.innerHTML = '';
             }
             else {
                 cardMovie.innerHTML = `<img src="${data.Poster}" alt="">`;
