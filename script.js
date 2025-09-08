@@ -16,7 +16,7 @@ function searchMovie() {
 }
 
 function getMovieData(movieName) {
-    fetch(`http://www.omdbapi.com/?t=${movieName}&apikey=${apikey}`)
+    fetch(`https://www.omdbapi.com/?t=${movieName}&apikey=${apikey}`)
         .then(res => res.json())
         .then(data => {
             console.log(data);
